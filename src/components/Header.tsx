@@ -3,6 +3,9 @@ import Slider from 'react-slick';
 import { useTranslation } from 'react-i18next';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import banner1 from '../assets/images/banner1.jpg';
+import banner2 from '../assets/images/banner2.jpg';
+import banner3 from '../assets/images/banner3.jpg';
 
 // Add custom CSS for fade effect
 const fadeStyles = `
@@ -28,10 +31,11 @@ const fadeStyles = `
 `;
 
 const slideImages = [
-  'https://www.constantinescotland.co.uk/wp-content/uploads/2024/02/IWM_2018_073_0010-2000x0-c-center-e1707306420941-1536x878.jpeg',
-  'https://www.constantinescotland.co.uk/wp-content/uploads/2024/02/New-truck-at-Bowes-with-credit3-2000x0-c-center-1536x909.jpeg',
-  'https://www.constantinescotland.co.uk/wp-content/uploads/2024/02/ART-STORE-29-Edit-HI-RES-3-scaled-2000x0-c-center-1536x1025.jpeg'
+  banner1,
+  banner2,
+  banner3
 ];
+
 
 const Header = () => {
   const { t, i18n } = useTranslation();
