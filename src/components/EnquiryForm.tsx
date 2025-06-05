@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+
+const email = 's2ttts1617302@gmail.com';
+
 const EnquiryForm = () => {
   const [formData, setFormData] = useState({
     title: '',
@@ -60,14 +63,15 @@ const EnquiryForm = () => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        access_key: '3ca65125-0e68-4937-8788-6c8eb49c832e',
+        // access_key: '3ca65125-0e68-4937-8788-6c8eb49c832e',
+        access_key: '47d7a8f3-19c1-4dd6-93c8-62f9c0fb9596',
         title: formData.title,
         name: formData.fullName,
         email: formData.email,
         phone: formData.telephone,
         enquiry_type: formData.enquiryType,
         message: formData.message,
-        to_email: 'hienxu88.hp@gmail.com'
+        to_email: email
       }),
     })
     .then(response => response.json())

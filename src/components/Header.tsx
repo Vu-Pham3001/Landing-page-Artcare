@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
+import { useTranslation } from 'react-i18next';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -33,6 +34,7 @@ const slideImages = [
 ];
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -45,6 +47,15 @@ const Header = () => {
     fade: true,
     cssEase: 'ease-out'
   };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <header className="bg-black lg:min-h-screen">
@@ -55,8 +66,22 @@ const Header = () => {
             
           </button>
           <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-2">
+              <select 
+                className="bg-transparent text-[#B3A06D] hover:text-[#D4C38D] cursor-pointer focus:outline-none"
+                onChange={(e) => changeLanguage(e.target.value)}
+                value={i18n.language}
+              >
+                <option value="en" className="flex items-center">
+                  English
+                </option>
+                <option value="vi" className="flex items-center">
+                  Tiếng Việt
+                </option>
+              </select>
+            </div>
             <a href="#locations" className="text-[#B3A06D] hover:text-[#D4C38D] flex items-center nav-text">
-              LOCATIONS
+              {t('header.locations')}
             </a>
             <a href="mailto:contact@constantine.com" className="text-[#B3A06D] hover:text-[#D4C38D]">
               <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -75,7 +100,7 @@ const Header = () => {
       {/* Logo and Title */}
       <div className="text-center mb-16">
         <h1 className="text-[#B3A06D] text-5xl heading-light">
-          FINE ART LOGISTICS
+          {t('header.fine_art_logistics')}
         </h1>
       </div>
 
