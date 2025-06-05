@@ -1,6 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container {
+    @apply px-4 md:px-6 lg:px-8;
+  }
+}
+
+/* Base styles */
+body {
+  @apply antialiased bg-black text-white;
+}
+
+/* Typography utilities */
+.heading-light {
+  @apply font-light tracking-wide;
+}
+
+.heading-normal {
+  @apply font-normal tracking-normal;
+}
+
+.body-text {
+  @apply font-normal leading-relaxed text-gray-300;
+}
+
+.nav-text {
+  @apply font-normal tracking-wider uppercase;
+}
+
+/* Custom utility classes */
+.text-balance {
+  text-wrap: balance;
+}
 
 /* Your custom CSS here */
 body {
@@ -15,4 +50,27 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Custom styles */
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+/* Existing styles */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
