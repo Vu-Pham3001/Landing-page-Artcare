@@ -1,6 +1,44 @@
 {
   "header": {
     "locations": "LOCATIONS",
-    "fine_art_logistics": "FINE ART LOGISTICS"
+    "fine_art_logistics": "FINE ART LOGISTICS",
+    "menu": {
+      "home": "Fine Art Logistics",
+      "about": "About Us",
+      "contact": "Contact",
+      "news": "News"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "content": "We are a leading fine art logistics company specializing in the transportation, storage, and handling of valuable artworks. Our team of experts ensures the safe delivery of your precious pieces."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "form_title": "Send us a message",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "info_title": "Contact Information",
+    "address": "123 Art Street, City, Country",
+    "phone": "+1 234 567 890",
+    "email_info": "contact@artcare.com"
+  },
+  "news": {
+    "title": "Latest News",
+    "read_more": "Read More",
+    "article1": {
+      "title": "New Art Storage Facility",
+      "excerpt": "We are excited to announce the opening of our new state-of-the-art storage facility."
+    },
+    "article2": {
+      "title": "International Expansion",
+      "excerpt": "Our services are now available in new international markets."
+    },
+    "article3": {
+      "title": "Art Handling Workshop",
+      "excerpt": "Join our upcoming workshop on professional art handling techniques."
+    }
   }
 } 
