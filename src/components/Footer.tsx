@@ -1,4 +1,20 @@
 import React from 'react';
+import millonVietnam from '../assets/images/footer/1update_millonvietnam.png';
+import abijgaartWestQuimper from '../assets/images/footer/adjugart-brest-quimper-blanc.png';
+import alexanderAntique from '../assets/images/footer/alexander-antique.png';
+import andrewJonesAuctions from '../assets/images/footer/Andrew-Jones-Auctions-Cover.png';
+import bonhamsLogo from '../assets/images/footer/Bonhams-Logo.png';
+import cheffinsArt from '../assets/images/footer/Cheffins-Fine-Art-Logo.png';
+import conanBelleville from '../assets/images/footer/Conan-Belleville-Logo.png';
+import cottonAuction from '../assets/images/footer/Cotton-Auction-Footer-Logo.png';
+import debackerRichmond from '../assets/images/footer/debacker-richmond.png';
+import delonHoebanx from '../assets/images/footer/Delon-Hoebanx-Logo.png';
+import freemanHindman from '../assets/images/footer/Freeman-Hindman.webp';
+import jsFineArt from '../assets/images/footer/JS-Fine-Art-Logo.png';
+import kevinPageAntiques from '../assets/images/footer/Kevin-Page-Antiques-Logo.webp';
+import nagelLogo from '../assets/images/footer/Nagel-Logo.png';
+import setdartAuction from '../assets/images/footer/Setdart-Auction-Gallery-4.png';
+import subarnaAuction from '../assets/images/footer/Subarna-Auction-House-Logo.png';
 
 const Footer = () => {
   const navLinks = [
@@ -10,15 +26,22 @@ const Footer = () => {
   ];
 
   const certifications = [
-    { src: '/images/cert1.png', alt: 'Furniture Ombudsman' },
-    { src: '/images/cert2.png', alt: 'Quality Service' },
-    { src: '/images/cert3.png', alt: 'ARTIM' },
-    { src: '/images/cert4.png', alt: 'Certification 4' },
-    { src: '/images/cert5.png', alt: 'Approved Code' },
-    { src: '/images/cert6.png', alt: 'FIDI' },
-    { src: '/images/cert7.png', alt: 'FAIM' },
-    { src: '/images/cert8.png', alt: 'IAM' },
-    { src: '/images/cert9.png', alt: 'FIDI 2' }
+    { src: millonVietnam, alt: 'Millon Vietnam' },
+    { src: abijgaartWestQuimper, alt: 'Adjugart Brest Quimper' },
+    { src: alexanderAntique, alt: 'Alexander Antique' },
+    { src: andrewJonesAuctions, alt: 'Andrew Jones Auctions' },
+    { src: bonhamsLogo, alt: 'Bonhams' },
+    { src: cheffinsArt, alt: 'Cheffins Fine Art' },
+    { src: conanBelleville, alt: 'Conan Belleville' },
+    { src: cottonAuction, alt: 'Cotton Auction' },
+    { src: debackerRichmond, alt: 'Debacker Richmond' },
+    { src: delonHoebanx, alt: 'Delon Hoebanx' },
+    { src: freemanHindman, alt: 'Freeman Hindman' },
+    { src: jsFineArt, alt: 'JS Fine Art' },
+    { src: kevinPageAntiques, alt: 'Kevin Page Antiques' },
+    { src: nagelLogo, alt: 'Nagel' },
+    { src: setdartAuction, alt: 'Setdart Auction Gallery' },
+    { src: subarnaAuction, alt: 'Subarna Auction House' }
   ];
 
   return (
@@ -69,7 +92,16 @@ const Footer = () => {
           <p className="text-sm mb-6">We adhere to the British Association of Removers Alternative Dispute Resolution Scheme which is independently operated by;</p>
           <div className="flex flex-wrap justify-center items-center gap-8">
             {certifications.map((cert, index) => (
-              <img key={index} src={cert.src} alt={cert.alt} className="h-12 object-contain" />
+              <div 
+                key={index} 
+                className="bg-[#363636] hover:bg-[#404040] rounded-lg p-4 transition-all duration-300 ease-in-out"
+              >
+                <img 
+                  src={cert.src} 
+                  alt={cert.alt} 
+                  className="w-[100px] h-[40px] object-contain brightness-0 invert hover:brightness-100 hover:invert-0 transition-all duration-300"
+                />
+              </div>
             ))}
           </div>
         </div>

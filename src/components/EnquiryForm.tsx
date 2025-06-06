@@ -22,17 +22,19 @@ const EnquiryForm = () => {
   const titleOptions = [
     "Mr",
     "Mrs",
+    "Miss",
     "Ms",
-    "Dr",
-    "Prof"
+    "Other"
   ];
 
   const enquiryTypes = [
-    "Transport",
+    "Fire Art Services",
+    "International Moving",
+    "European Moving",
+    "Moving within the UK",
+    "Commercial/Business Move",
     "Storage",
-    "Installation",
-    "General Enquiry",
-    "Other"
+    "General Enquiry"
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
