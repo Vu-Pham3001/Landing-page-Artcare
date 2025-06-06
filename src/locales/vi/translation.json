@@ -1,6 +1,44 @@
 {
   "header": {
     "locations": "ĐỊA ĐIỂM",
-    "fine_art_logistics": "VẬN CHUYỂN NGHỆ THUẬT"
+    "fine_art_logistics": "VẬN CHUYỂN NGHỆ THUẬT",
+    "menu": {
+      "home": "Vận Chuyển Nghệ Thuật",
+      "about": "Về Chúng Tôi",
+      "contact": "Liên Hệ",
+      "news": "Tin Tức"
+    }
+  },
+  "about": {
+    "title": "Về Chúng Tôi",
+    "content": "Chúng tôi là công ty hàng đầu về vận chuyển nghệ thuật, chuyên về vận chuyển, lưu trữ và xử lý các tác phẩm nghệ thuật có giá trị. Đội ngũ chuyên gia của chúng tôi đảm bảo việc giao nhận an toàn các tác phẩm quý giá của bạn."
+  },
+  "contact": {
+    "title": "Liên Hệ",
+    "form_title": "Gửi tin nhắn cho chúng tôi",
+    "name": "Họ và tên",
+    "email": "Email",
+    "message": "Tin nhắn",
+    "send": "Gửi tin nhắn",
+    "info_title": "Thông tin liên hệ",
+    "address": "123 Đường Nghệ Thuật, Thành phố, Quốc gia",
+    "phone": "+1 234 567 890",
+    "email_info": "contact@artcare.com"
+  },
+  "news": {
+    "title": "Tin Tức Mới Nhất",
+    "read_more": "Xem Thêm",
+    "article1": {
+      "title": "Cơ Sở Lưu Trữ Nghệ Thuật Mới",
+      "excerpt": "Chúng tôi vui mừng thông báo về việc khai trương cơ sở lưu trữ hiện đại mới."
+    },
+    "article2": {
+      "title": "Mở Rộng Quốc Tế",
+      "excerpt": "Dịch vụ của chúng tôi hiện đã có mặt tại các thị trường quốc tế mới."
+    },
+    "article3": {
+      "title": "Hội Thảo Xử Lý Nghệ Thuật",
+      "excerpt": "Tham gia hội thảo sắp tới của chúng tôi về kỹ thuật xử lý nghệ thuật chuyên nghiệp."
+    }
   }
 } 
