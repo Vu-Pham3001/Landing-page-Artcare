@@ -157,7 +157,7 @@ const Header = () => {
   return (
     <header className="bg-black lg:min-h-screen relative">
       {/* Menu Button and Language Selector */}
-      <div className="container mx-auto px-4 py-6 relative z-50">
+      <div className="container mx-auto px-4 py-6 relative z-30">
         <div className="flex justify-between items-center">
           <div 
             className="menu-button"
