@@ -1,15 +1,27 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-
+import FineArt from '../components/FineArt';
+import Navigation from '../components/Navigation';
+import Banner from '../components/Banner';
+import EnquiryForm from '../components/EnquiryForm';
+import SocialMedia from '../components/SocialMedia';
+import Newsletter from '../components/Newsletter';
+import ScrollToTop from '../components/ScrollToTop';
+import Footer from '../components/Footer';
+      
 const About = () => {
   const { t } = useTranslation();
-  
+
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">{t('about.title')}</h1>
-      <div className="prose max-w-none">
-        {t('about.content')}
-      </div>
+    <div className="min-h-screen bg-black font-sans overflow-x-hidden">
+      <Navigation />
+      <Banner />
+      <FineArt isAbout={true}/>
+      <EnquiryForm isAbout={true}/>
+      <SocialMedia />
+      <Newsletter />
+      <ScrollToTop />
+      <Footer />
     </div>
   );
 };

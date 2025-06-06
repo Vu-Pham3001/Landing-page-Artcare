@@ -2,7 +2,8 @@ import ArtServices from '../components/ArtServices';
 import EnquiryForm from '../components/EnquiryForm';
 import FineArt from '../components/FineArt';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
+import Navigation from '../components/Navigation';
+import Banner from '../components/Banner';
 import Newsletter from '../components/Newsletter';
 import ScrollToTop from '../components/ScrollToTop';
 import SocialMedia from '../components/SocialMedia';
@@ -10,7 +11,8 @@ import SocialMedia from '../components/SocialMedia';
 const Home = () => {
   return (
     <div className="min-h-screen bg-black font-sans overflow-x-hidden">
-      <Header />
+      <Navigation />
+      <Banner />
       <FineArt />
       <ArtServices />
       <EnquiryForm />

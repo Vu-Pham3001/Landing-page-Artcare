@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const email = 'info@artcare.vn';
 
-const EnquiryForm = () => {
+const EnquiryForm = ({ isAbout = false, isContact = false }) => {
   const [formData, setFormData] = useState({
     title: '',
     fullName: '',
@@ -48,16 +48,16 @@ const EnquiryForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     console.log('Form submitted');
     e.preventDefault();
-    
+
     // Log form data to verify it's being captured
     console.log('Form data:', formData);
-    
+
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: '' });
 
     // For testing - simulate API call
     console.log('Sending to:', 'hienxu88.hp@gmail.com');
-    
+
     // Simple POST request
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
@@ -76,60 +76,60 @@ const EnquiryForm = () => {
         to_email: email
       }),
     })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Response:', data);
-      if (data.success) {
+      .then(response => response.json())
+      .then(data => {
+        console.log('Response:', data);
+        if (data.success) {
+          setSubmitStatus({
+            type: 'success',
+            message: 'Thank you for your enquiry. We will get back to you soon.'
+          });
+          setFormData({
+            title: '',
+            fullName: '',
+            email: '',
+            telephone: '',
+            enquiryType: '',
+            message: ''
+          });
+        } else {
+          throw new Error('Failed to submit form');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
         setSubmitStatus({
-          type: 'success',
-          message: 'Thank you for your enquiry. We will get back to you soon.'
+          type: 'error',
+          message: 'Sorry, something went wrong. Please try again later.'
         });
-        setFormData({
-          title: '',
-          fullName: '',
-          email: '',
-          telephone: '',
-          enquiryType: '',
-          message: ''
-        });
-      } else {
-        throw new Error('Failed to submit form');
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      setSubmitStatus({
-        type: 'error',
-        message: 'Sorry, something went wrong. Please try again later.'
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
-    })
-    .finally(() => {
-      setIsSubmitting(false);
-    });
   };
 
   return (
     <section className="bg-white py-20">
       <div className="container mx-auto max-w-3xl">
+        {!isContact && (
         <div className="text-center mb-12 px-6 md:px-0">
           <h2 className="text-[#B3A06D] text-4xl heading-light mb-6">
-            Make an Enquiry
+            {isAbout ? 'Contact Us' : 'Make an Enquiry'}
           </h2>
-          <p className="text-black">
-            Our fine arts logistics services are tailored to your needs. Contact us today for a quote or if you have any
-            questions. Please provide as much information as you can, and we will get back to you as soon as possible.
+          <p className="text-[#B3A06D]">
+            {isAbout ? 'Speak to our expert team' : 'Our fine arts logistics services are tailored to your needs. Contact us today for a quote or if you have any questions. Please provide as much information as you can, and we will get back to you as soon as possible.'}
           </p>
         </div>
+        )}
 
         {submitStatus.type && (
-          <div className={`mb-6 p-4 text-center rounded ${
-            submitStatus.type === 'success' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
-          }`}>
+          <div className={`mb-6 p-4 text-center rounded ${submitStatus.type === 'success' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+            }`}>
             {submitStatus.message}
           </div>
         )}
 
-        <form 
+        <form
           onSubmit={handleSubmit}
           className="space-y-4 px-6 md:px-0"
         >
@@ -264,9 +264,8 @@ const EnquiryForm = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`w-full bg-[#B3A06D] text-white py-3 px-6 mt-6 h-[50px] transition-colors duration-300 ${
-              isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#9F8C5C]'
-            }`}
+            className={`w-full bg-[#B3A06D] text-white py-3 px-6 mt-6 h-[50px] transition-colors duration-300 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#9F8C5C]'
+              }`}
             onClick={() => console.log('Button clicked')}
           >
             {isSubmitting ? 'Sending...' : 'SUBMIT'}
