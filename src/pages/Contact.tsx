@@ -11,7 +11,7 @@ const Contact = () => {
   const { t } = useTranslation();
   
   return (
-    <div className="min-h-screen bg-black font-sans overflow-x-hidden">
+    <div className="min-h-screen bg-black  overflow-x-hidden">
       <Navigation />
       <Banner isContact={true}/>
       <EnquiryForm isContact={true} />

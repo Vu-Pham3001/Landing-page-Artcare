@@ -11,7 +11,7 @@ import AnimateOnScroll from '../components/AnimateOnScroll';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-black font-sans overflow-hidden">
+    <div className="min-h-screen bg-black  overflow-hidden">
       <Navigation />
       <Banner />
 

@@ -13,7 +13,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen bg-black font-sans overflow-hidden">
+    <div className="min-h-screen bg-black  overflow-hidden">
       <Navigation />
       <Banner />
       <FineArt isAbout={true}/>
