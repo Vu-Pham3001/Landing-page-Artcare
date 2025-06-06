@@ -49,7 +49,7 @@ const Banner = ({ isContact = false }) => {
   };
 
   return (
-    <section className={`${isContact ? 'bg-white' : 'bg-black'} lg:min-h-screen relative pt-20`}>
+    <section className={`${isContact ? 'bg-white' : 'bg-black'} relative pt-20`}>
       {/* Logo and Title */}
       <div className="text-center mb-16 relative z-20">
         <h1 className="text-[#B3A06D] text-5xl heading-light">
