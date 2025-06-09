@@ -16,13 +16,18 @@ const ArtServices = () => {
       title: "Installation",
       image: "https://www.constantinescotland.co.uk/wp-content/uploads/2024/02/ART-STORE-29-Edit-HI-RES-3-scaled-2000x0-c-center-1536x1025.jpeg",
       description: "Constantine Scotland's experienced art handlers can professionally install and decant works to a wide variety of specifications – from delicate small objects to full-scale exhibitions."
-    }
+    },
+    {
+      title: "Transport",
+      image: "https://www.constantinescotland.co.uk/wp-content/uploads/2024/02/IWM_2018_073_0010-2000x0-c-center-e1707306420941-1536x878.jpeg",
+      description: "We provide a range of transport options, including road, sea, and air freight, ensuring objects in our possession reach their destination safely and securely."
+    },
   ];
 
   return (
     <section className="bg-black text-white pb-10 lg:py-20">
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {services.map((service, index) => (
             <div key={index} className="space-y-6">
               <div className="aspect-[3/2] overflow-hidden">
