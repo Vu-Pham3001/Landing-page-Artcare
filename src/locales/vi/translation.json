@@ -40,5 +40,40 @@
       "title": "Hội Thảo Xử Lý Nghệ Thuật",
       "excerpt": "Tham gia hội thảo sắp tới của chúng tôi về kỹ thuật xử lý nghệ thuật chuyên nghiệp."
     }
+  },
+  "fine_art": {
+    "excellence_title": "Nghệ thuật Chuyên chở Tinh hoa",
+    "excellence_content": "Khi một kiệt tác được lựa chọn, hành trình tiếp theo của nó cũng đòi hỏi những chuẩn mực tương xứng. Artcare chuyên chở những giá trị nghệ thuật độc đáo từ các trung tâm danh tiếng trên thế giới về Việt Nam, với quy trình được thiết kế riêng cho từng tác phẩm, đảm bảo sự an toàn và bảo mật ở mức độ cao nhất.",
+    "about_title": "Về Artcare",
+    "art_protecting_art": "Nghệ thuật bảo vệ Nghệ thuật",
+    "about_content": "Tại Artcare, chúng tôi tin rằng mỗi tác phẩm nghệ thuật mang trong mình một câu chuyện, một di sản vô giá. Đó không chỉ là những vật thể có giá trị cao, mà còn là kết tinh của sáng tạo, đam mê và những giá trị văn hóa trường tồn. Sứ mệnh của chúng tôi được khơi nguồn từ chính tình yêu sâu sắc với nghệ thuật và sự thấu cảm với những mong muốn của nhà sưu tầm Việt - những người luôn khao khát làm giàu thêm không gian sống và tâm hồn mình bằng vẻ đẹp của các kiệt tác.",
+    "about_content_2": "Artcare ra đời để giúp hành trình sở hữu nghệ thuật của Quý vị trở nên trọn vẹn, xóa bỏ mọi rào cản về khoảng cách địa lý hay những thủ tục phức tạp. Artcare không hướng đến việc trở thành một đơn vị vận chuyển đại trà: chúng tôi tập trung vào một phân khúc riêng biệt, nơi sự tỉ mỉ, kiến thức chuyên môn và khả năng xử lý những yêu cầu phức tạp nhất được đặt lên hàng đầu.",
+    "why_choose": "Vì sao chọn Artcare",
+    "global_network": "Mạng lưới toàn cầu",
+    "global_network_content": "Mạng lưới đối tác quốc tế lớn mạnh, song hành cùng đội ngũ nội địa am hiểu sâu sắc về văn hoá và quy trình tại Việt Nam.",
+    "unique_journey": "Hành trình riêng biệt",
+    "unique_journey_content": "Mỗi tác phẩm đều được chăm chút bằng sự tận tâm, mang đến trải nghiệm dịch vụ cá nhân hoá và xứng tầm.",
+    "absolute_confidentiality": "Bảo mật tuyệt đối",
+    "confidentiality_content": "Thông tin về quý vị và bộ sưu tập của Quý vị là ưu tiên hàng đầu, được xử lý với mức độ thận trọng và bảo mật cao nhất.",
+    "transparent_process": "Quy trình minh bạch",
+    "process_content": "Artcare đề cao sự rõ ràng và chuyên nghiệp. Quý vị sẽ luôn được cập nhật và đồng hành trong từng chặng của hành trình."
+  },
+  "art_services": {
+    "international_shipping": {
+      "title": "Vận chuyển quốc tế",
+      "description": "Artcare thiết kế và quản lý các tuyến vận chuyển chuyên biệt từ các trung tâm nghệ thuật hàng đầu tại Pháp, Anh, Đức, Mỹ, Hong Kong... Chúng tôi không chỉ lựa chọn những đối tác vận chuyển uy tín mà còn đánh giá các yếu tố phụ trợ như năng lực xử lý hàng hóa đặc biệt, các tùy chọn kiểm soát nhiệt độ và độ ẩm trong suốt hành trình… nhằm đảm bảo sự ổn định và an toàn tuyệt đối."
+    },
+    "packaging_preservation": {
+      "title": "Đóng gói & Bảo quản",
+      "description": "Mỗi tác phẩm nghệ thuật là độc nhất, đòi hỏi sự chăm sóc riêng biệt. Các chuyên gia của chúng tôi sẽ đánh giá cụ thể từng tác phẩm để áp dụng phương pháp bảo vệ phù hợp nhất: từ hệ thống vật liệu đóng gói, các kết cấu giảm chấn, đến việc chế tác các thùng chứa chuyên dụng, sẵn sàng cho mọi điều kiện vận chuyển quốc tế."
+    },
+    "customs_clearance": {
+      "title": "Thông quan hải quan",
+      "description": "Sự lưu thông của các tác phẩm nghệ thuật qua biên giới luôn đi kèm với những yêu cầu pháp lý và thủ tục hải quan đặc thù. Đội ngũ chuyên gia của Artcare, với kinh nghiệm và mối quan hệ chuyên nghiệp, sẽ đại diện cho Quý vị để điều phối và hoàn tất mọi nghĩa vụ một cách hiệu quả, minh bạch và hợp lệ."
+    },
+    "art_insurance": {
+      "title": "Bảo hiểm Nghệ thuật",
+      "description": "Chúng tôi hợp tác với các đơn vị bảo hiểm uy tín hàng đầu để mang đến những giải pháp bảo hiểm chuyên biệt, toàn diện, bảo vệ toàn diện giá trị của tác phẩm trong suốt quá trình vận chuyển và lưu giữ."
+    }
   }
 } 

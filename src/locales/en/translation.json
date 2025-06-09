@@ -40,5 +40,40 @@
       "title": "Art Handling Workshop",
       "excerpt": "Join our upcoming workshop on professional art handling techniques."
     }
+  },
+  "fine_art": {
+    "excellence_title": "Art Carrying Excellence",
+    "excellence_content": "When a masterpiece is chosen, its next journey demands equally high standards. Artcare transports unique artistic values from renowned centers worldwide to Vietnam, with processes tailored for each artwork, ensuring maximum safety and security.",
+    "about_title": "About Artcare",
+    "art_protecting_art": "Art Protecting Art",
+    "about_content": "At Artcare, we believe that each artwork carries a story, an invaluable heritage. These are not just high-value objects, but the crystallization of creativity, passion, and enduring cultural values. Our mission stems from a deep love for art and empathy with the desires of Vietnamese collectors - those who always aspire to enrich their living spaces and souls with the beauty of masterpieces.",
+    "about_content_2": "Artcare was established to make your art ownership journey complete, eliminating barriers of geographical distance or complex procedures. Artcare does not aim to become a mass shipping unit: we focus on a distinct segment where meticulousness, expertise, and the ability to handle the most complex requirements are paramount.",
+    "why_choose": "Why Choose Artcare",
+    "global_network": "Global Network",
+    "global_network_content": "A strong international partner network, working alongside a domestic team with deep understanding of Vietnamese culture and procedures.",
+    "unique_journey": "Unique Journey",
+    "unique_journey_content": "Each artwork is cared for with dedication, delivering a personalized and premium service experience.",
+    "absolute_confidentiality": "Absolute Confidentiality",
+    "confidentiality_content": "Information about you and your collection is our top priority, handled with the highest level of caution and security.",
+    "transparent_process": "Transparent Process",
+    "process_content": "Artcare emphasizes clarity and professionalism. You will always be updated and accompanied at every stage of the journey."
+  },
+  "art_services": {
+    "international_shipping": {
+      "title": "International Shipping",
+      "description": "Artcare designs and manages specialized shipping routes from leading art centers in France, England, Germany, USA, Hong Kong... We not only select reputable shipping partners but also evaluate auxiliary factors such as special cargo handling capabilities, temperature and humidity control options throughout the journey... to ensure absolute stability and safety."
+    },
+    "packaging_preservation": {
+      "title": "Packaging & Preservation",
+      "description": "Each artwork is unique, requiring individual care. Our experts will specifically evaluate each piece to apply the most appropriate protection method: from packaging materials, shock absorption structures, to the manufacture of specialized containers, ready for all international shipping conditions."
+    },
+    "customs_clearance": {
+      "title": "Customs Clearance",
+      "description": "The movement of artworks across borders always comes with specific legal requirements and customs procedures. Artcare's team of experts, with experience and professional relationships, will represent you to coordinate and complete all obligations efficiently, transparently, and legally."
+    },
+    "art_insurance": {
+      "title": "Art Insurance",
+      "description": "We partner with leading insurance providers to deliver specialized, comprehensive insurance solutions, fully protecting the value of the artwork throughout the transportation and storage process."
+    }
   }
 } 
