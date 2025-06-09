@@ -99,7 +99,7 @@ const Footer = () => {
                 <img 
                   src={cert.src} 
                   alt={cert.alt} 
-                  className="w-[100px] h-[40px] object-contain brightness-0 invert hover:brightness-100 hover:invert-0 transition-all duration-300"
+                  className="w-[60px] h-[30px] md:w-[100px] md:h-[40px] object-contain brightness-0 invert hover:brightness-100 hover:invert-0 transition-all duration-300"
                 />
               </div>
             ))}
